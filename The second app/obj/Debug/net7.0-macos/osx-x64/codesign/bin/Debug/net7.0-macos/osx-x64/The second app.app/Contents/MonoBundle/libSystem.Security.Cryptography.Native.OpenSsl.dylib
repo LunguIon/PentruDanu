@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/lunguion/RiderProjects/The second app/The second app/bin/Debug/net7.0-macos/osx-x64/The second app.app/Contents/MonoBundle/libSystem.Security.Cryptography.Native.OpenSsl.dylib

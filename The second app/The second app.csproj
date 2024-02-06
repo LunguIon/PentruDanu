@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0-macos</TargetFramework>
+        <RootNamespace>The_second_app</RootNamespace>
+        <OutputType>Exe</OutputType>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>true</ImplicitUsings>
+        <SupportedOSPlatformVersion>10.14</SupportedOSPlatformVersion>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="MySql.Data" Version="8.3.0" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="assets\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Remove="assets\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <ImageAsset Remove="assets\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <InterfaceDefinition Remove="assets\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="assets\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Resources\" />
+    </ItemGroup>
+</Project>
